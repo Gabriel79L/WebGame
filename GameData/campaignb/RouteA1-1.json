@@ -1,0 +1,17 @@
+{
+	"text": "route a1 1",
+	"exit": [
+		{
+			"trigger":"upward",
+			"check":{"skill":"none","value":"0"},
+			"out":"RouteA1-1",
+			"fail":""
+		},
+		{
+			"trigger":"downward",
+			"check":{"skill":"none","value":"0"},
+			"out":"RouteA1-2",
+			"fail":""
+		}
+	]
+}

@@ -1,0 +1,8 @@
+Campaign editing:
+
+- double click startserver.bat
+
+- go to http://localhost:3003/editor
+
+- edit away!
+

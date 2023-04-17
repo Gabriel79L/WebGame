@@ -1,0 +1,18 @@
+{
+	"text": "You approach a LONELY CRAB",
+	"skillmod": {"skill":"none","value":"0"},
+	"exit": [
+		{
+			"trigger":"seduce him",
+			"check":{"skill":"none","value":"0"},
+			"out":"default",
+			"fail":"default"
+		},
+		{
+			"trigger":"devour",
+			"check":{"skill":"none","value":"0"},
+			"out":"crabSuccess",
+			"fail":"default"
+		}
+	]
+}

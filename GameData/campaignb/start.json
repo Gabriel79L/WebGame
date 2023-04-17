@@ -1,0 +1,17 @@
+{
+	"text": "Hello! Welcome to the Web Text-Based Adventure.\nYou come to a fork in the road. Which path do you want to take?",
+	"exit": [
+		{
+			"trigger":"left",
+			"check":{"skill":"none","value":"0"},
+			"out":"left1",
+			"fail":""
+		},
+		{
+			"trigger":"right",
+			"check":{"skill":"none","value":"0"},
+			"out":"right1",
+			"fail":""
+		}
+	]
+}

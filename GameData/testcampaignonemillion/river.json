@@ -1,0 +1,1 @@
+{"text":"You fell into the river","skillmod":{"skill":"hp","value":"-10"},"exit":[{"trigger":"go back","check":{"skill":"none","value":"0"},"out":"start","fail":""}]}

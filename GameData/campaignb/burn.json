@@ -1,0 +1,1 @@
+{"text":"FIRE FIRE 140911252945479 DEAD YOU WIN!!!","skillmod":{"skill":"none","value":"0"},"exit":[{"trigger":"restart","check":{"skill":"none","value":"0"},"out":"burn","fail":""},{"trigger":"restart2 becuase this editor sucks","check":{"skill":"","value":"0"},"out":"start","fail":""}]}

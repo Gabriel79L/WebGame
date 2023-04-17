@@ -1,0 +1,17 @@
+{
+	"text": "You successfully swim across, but you have been washed down the river, and you are a half mile south of the road.",
+	"exit": [
+		{
+			"trigger":"wander",
+			"check":{"skill":"none","value":"0"},
+			"out":"crab",
+			"fail":""
+		},
+		{
+			"trigger":"return to the road",
+			"check":{"skill":"none","value":"0"},
+			"out":"village",
+			"fail":""
+		}
+	]
+}

@@ -1,0 +1,1 @@
+{"text":"DO you want to burn the village down","skillmod":{"skill":"none","value":"0"},"exit":[{"trigger":"Yes, of course","check":{"skill":"none","value":"0"},"out":"burn","fail":""},{"trigger":"NO","check":{"skill":"none","value":"0"},"out":"start","fail":""}]}

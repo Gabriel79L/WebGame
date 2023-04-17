@@ -1,0 +1,23 @@
+{
+	"text": "You walk down the left path but... The bridge has collapsed! How do you proceed?",
+	"exit": [
+		{
+			"trigger":"jump over",
+			"check":{"skill":"none","value":"0"},
+			"out":"death",
+			"fail":""
+		},
+		{
+			"trigger":"swim across",
+			"check":{"skill":"none","value":"0"},
+			"out":"leftRiver",
+			"fail":""
+		},
+		{
+			"trigger":"turn around",
+			"check":{"skill":"none","value":"0"},
+			"out":"start",
+			"fail":""
+		}
+	]
+}

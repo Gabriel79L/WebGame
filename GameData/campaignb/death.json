@@ -1,0 +1,12 @@
+{
+	"text": "You Died!",
+	"exit": [
+		{
+			"trigger":"start over",
+			"check":{"skill":"none","value":"0"},
+			"out":"start",
+			"fail":""
+		}
+
+	]
+}

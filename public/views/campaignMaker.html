@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Campaign Editor</title>
+    <meta charset="utf-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header
+          class="box">
+      <h1>Campaign Editor</h1>
+    </header>
+
+    <div class="box top">
+    <fieldset>
+      <br>
+      <a href = "/">Home</a>
+      <br><br>
+      <div class = "campaignCreator">
+        <b>Create/Edit Campaign</b> <br>
+        <label for="campaignName">Campaign Name:</label>
+        <input type="text" id="campaignName" />
+        <label for="defSS">Default Story State:</label>
+        <input type="text" id="defSS" />
+        <input type="button" id="campaignRetriever" value="Submit"/>
+      </div>
+      <div id = "ssEditor">
+        <b>StoryState Editor</b> <br>
+
+        <label for="filename">Filename:</label>
+        <input type="text" id="filename" />
+        <input type="button" id="ssRetriever" value="Submit"/>
+        <input type="button" id="ssGetter" value="Get"/>
+
+        <br><br>
+
+        <label for="prompt">Prompt:</label>
+        <input type="text" id="prompt" /> <br>
+        <label for="mod">Skill Modification:</label>
+        <input type="text" class="mod" value="none" /> : <input type="number" class="modval" value="0" /> <br>
+        <label for="options">Options:</label>
+        <div id="options">
+            <!--<div class="opt">
+              <br>
+              <label for="trigger">Option Text:</label>
+              <input type="text" class="trigger" /> <br>
+              <label for="skill">Skill Check:</label>
+              <input type="text" class="skill" value="none"  /> : <input type="number" class="value" value="0" /> <br>
+              <label for="success">Success Link:</label>
+              <input type="text" class="success" /> <br>
+              <label for="fail">Fail Link:</label>
+              <input type="text" class="fail" /> <br>
+            </div>-->
+        </div>
+        <br>
+      <input type="button" id="addOption" value="+" />
+      <input type="button" id="clear" value="Clear" />
+      </div>
+    </fieldset>
+    </div>
+   </div>
+    <script src="js/campaign.js"></script>
+  </body>
+    <style type="text/css">
+
+      a {
+        color: white;
+        text-decoration: none;
+        background-color: #5c5c5c;
+        font-size: 22px;    
+        padding: 5px;
+
+      }    
+      a:hover {
+        color: #5c5c5c;
+        background-color: black;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #5c5c5c; 
+        font-size: 22px;
+            
+      }    
+      body {
+          background-color: #262626;
+          color: white;
+          
+          padding: 20px;
+          font-family: Cabin;
+          font-size: 20px;
+          width: 50%;
+          margin: 20px;
+      }
+      .campaignCreator {
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        padding: 20px;
+        background-color: #262626;
+      }
+      #ssEditor {
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        padding: 20px;
+        background-color: #262626;
+      }
+      input[type=text] {
+          background-color: #5c5c5c;
+          color: white;
+          outline-color: white;
+          font-family: Cabin;
+          font-size: 20px;
+      }
+      input[type=number] {
+          background-color: #5c5c5c;
+          color: white;
+          outline-color: white;
+          width: 50px;
+          text-align: right;
+          font-family: Cabin;
+          font-size: 20px;
+      }
+      input[type=button] {
+          background-color: #5c5c5c;
+          color: white;
+          outline-color: white;
+          font-family: Cabin;
+          font-size: 20px;
+      }
+      #options {
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        padding: 20px;
+      }
+      .opt {
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        width: 50%;
+        padding: 5px;
+      }
+      iframe {
+        width: 100%;
+        background-color: gray;
+      }
+      body, html {
+      height: 100%;
+      width: 100%;
+      padding:0;
+      margin: 0;
+      font-family: Cabin;
+    }
+
+   *{
+      box-sizing: border-box;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        display: grid;
+        grid-template-areas:
+            "a"
+            "b";
+        grid-template-rows: 10% 80%;
+        grid-template-columns: 100%;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+    }
+    .top{
+      grid-area: b;
+      width:100%;
+      height:100%;
+    }
+    fieldset{
+      width:95%;
+      height:95%;
+      background-color: #262626;
+    }
+    header {
+        grid-area: a;
+        color: white;
+        background-color: black;
+    }
+    @media ( min-width: 768px ) {
+        .container {
+            grid-template-areas:
+                "a"
+                "b";
+            grid-template-rows: 10% 80%;
+        grid-template-columns: 100%;
+            height: 100%;
+    }
+
+    @media ( min-width: 992px ) {
+        .container {
+            grid-template-areas:
+                "a"
+                "b";
+            grid-template-rows: 10% 80%;
+            grid-template-columns: 100%;
+            height:100%;
+        }
+    }
+    </style>
+    
+</html>

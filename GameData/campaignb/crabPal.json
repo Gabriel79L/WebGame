@@ -1,0 +1,12 @@
+{
+	"text": "You successfully befriend the crab. The crab gives you strength. +1 Strength",
+	"skillmod": {"skill":"strength","value":"1"},
+	"exit": [
+		{
+			"trigger":"go to the road",
+			"check":{"skill":"none","value":"0"},
+			"out":"village",
+			"fail":"default"
+		}
+	]
+}

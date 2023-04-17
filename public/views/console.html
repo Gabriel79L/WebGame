@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Console</title>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+      #input {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        text-align: left;
+      }
+      #campaign {
+        top: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        text-align: left;
+      }
+      #console {
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+  <body>
+      <div id="console"></div>
+
+      <div id="input">
+        <input type="text" id="command">
+        <input type="button" value="Send" id="sendCommand">
+      </div>
+
+      <div id="campaign">
+        <input type="text" id="campaignName" value="default">
+        <input type="button" value="Set Campaign" id="doCampaign">
+        <input type="number" id="characterID" value="">
+        <input type="button" value="Use Character" id="getCharacter">
+      </div>
+    <script src="js/console.js"></script>
+
+  </body>
+</html>

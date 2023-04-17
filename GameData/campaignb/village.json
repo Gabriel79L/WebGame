@@ -1,0 +1,12 @@
+{
+	"text": "You encounter a village.",
+	"skillmod": {"skill":"none","value":"0"},
+	"exit": [
+		{
+			"trigger":"incomplete",
+			"check":{"skill":"none","value":"0"},
+			"out":"custom",
+			"fail":""
+		}
+	]
+}

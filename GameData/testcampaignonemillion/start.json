@@ -1,0 +1,1 @@
+{"text":"You come to a bridge.","skillmod":{"skill":"none","value":"0"},"exit":[{"trigger":"Cross normally","check":{"skill":"none","value":"0"},"out":"otherside","fail":""},{"trigger":"Jump off","check":{"skill":"none","value":"0"},"out":"river","fail":""}]}

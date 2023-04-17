@@ -1,0 +1,12 @@
+{
+	"text": "You successfully eat the crab. +1 HP",
+	"skillmod": {"skill":"hp","value":"1"},
+	"exit": [
+		{
+			"trigger":"go to the road",
+			"check":{"skill":"none","value":"0"},
+			"out":"village",
+			"fail":"default"
+		}
+	]
+}

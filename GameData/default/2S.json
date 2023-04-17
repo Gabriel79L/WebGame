@@ -1,0 +1,1 @@
+{"text":"You simply go around the pothole and suddenly realize you have a decision to make.","skillmod":{"skill":"none","value":"0"},"exit":[{"trigger":"racked with regret you tearfully run back to the tavern","check":{"skill":"none","value":"0"},"out":"2B","fail":""},{"trigger":"you steady your heart and walk away","check":{"skill":"none","value":"0"},"out":"3B","fail":""}]}

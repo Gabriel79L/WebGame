@@ -1,0 +1,1 @@
+{"text":"Default Campaign","skillmod":{"skill":"none","value":"0"},"exit":[{"trigger":"a","check":{"skill":"none","value":"0"},"out":"a","fail":""},{"trigger":"b","check":{"skill":"none","value":"0"},"out":"b","fail":""}]}

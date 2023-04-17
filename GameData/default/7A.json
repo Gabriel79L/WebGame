@@ -1,0 +1,3 @@
+{"text":"As you head into the exciting storage room you can’t help but notice a huge safe sitting right in the open. Your eyes sharpen with greed as you walk towards it. But as you approach you notice that it's locked. Do you try to use your outstanding strength to bust open the lock? Or will you use your dazzling Intelligence to figure out where the key is hidden? 
+","skillmod":{"skill":"none","value":"0"},"exit":[{"trigger":"Strength","check":{"skill":"strength","value":"15"},"out":"3S","fail":"2F"},{"trigger":"Intelligence
+","check":{"skill":"intelligence","value":"15"},"out":"7A","fail":""}]}

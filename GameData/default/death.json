@@ -1,0 +1,1 @@
+{"text":"You are super dead [New Game]?","skillmod":{"skill":"none","value":"0"},"exit":[{"trigger":"new game","check":{"skill":"none","value":"0"},"out":"start","fail":""}]}

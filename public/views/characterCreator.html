@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Character Maker</title>
+    <meta charset="utf-8"/>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+        <header
+          class="box">
+          <h1>Character &nbspMaker<h1>
+        </header>
+       
+        <div class="box top">
+
+          <fieldset>
+            <a href="/">Home</a><br>
+            <h2>Character Details:</h2>
+
+           
+
+            <label for="name">Character Name:</label>
+            <input id="name" type="text" name="name">
+            <label for="race">Character Race:</label>
+            <select name="race" id="race">
+              <option value="Human">Human</option>
+              <option value="Tiefling">Tiefling</option>
+              <option value="Elf">Elf</option>
+            </select>
+            <label for="class">Character Class:</label>
+            <select name="class" id="class">
+              <option value="Wizard">Wizard</option>
+              <option value="Druid">Druid</option>
+              <option value="Rouge">Rouge</option>
+              <option value="Bard">Bard</option>
+              <option value="Fighter">Fighter</option>
+            </select>
+            <br><br>Instructions: Choose your name, race, and class, press create, and copy paste your ID into the character field in the game.<br>
+            <label for="identifier">Get Character ID Here:</label>
+            <input id="identifier" type="number" name="identifier" min="1">
+            </fieldset>
+
+
+           
+        </div>
+        <div class="box middle">
+            <fieldset>
+                <h2>Character Stats:</h2>
+                <p id="strength">Strength:</p>
+                <p id="dexterity">Dexterity:</p>
+                <p id="intelligence">Intelligence:</p>
+                <p id="wisdom">Wisdom:</p>
+                <p id="charisma">Charisma:</p>
+            </fieldset>
+        </div>
+         <div class="box bottom">
+            <fieldset>
+                <input type="reset" name="reset" value="Clear Form">
+    <!--        <input type="submit" name="send" value="Send Form">     -->
+                <input id="readButton" type="button" value="Read">
+                <input id="createButton" type="button" value="Create" />
+                <input id="deleteButton" type="button" value="Delete" />
+            </fieldset>
+        </div>
+      <hr>
+        <form action="#">
+        </form>
+
+  <style type="text/css">
+    body, html {
+      height: 100%;
+      padding:0;
+      margin: 0;
+      font-family: Cabin;
+    }
+
+   *{
+      box-sizing: border-box;
+    }
+    iframe {
+        width: 100%;
+        background-color: gray;
+      }
+    a {
+        color: white;
+        text-decoration: none;
+        background-color: #5c5c5c;
+        font-size: 22px;    
+        padding: 5px;
+
+      }    
+      a:hover {
+        color: #5c5c5c;
+        background-color: black;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #5c5c5c;
+        font-size: 22px;
+           
+      }
+      input[type=text] {
+          background-color: #5c5c5c;
+          color: white;
+          outline-color: white;
+          font-family: Cabin;
+          font-size: 22px;
+      }
+      input[type=number] {
+          background-color: #5c5c5c;
+          color: white;
+          outline-color: white;
+          width: 50px;
+          text-align: right;
+          font-family: Cabin;
+          font-size: 20px;
+      }
+      input[type=button] {
+          background-color: #5c5c5c;
+          color: white;
+          outline-color: white;
+          font-family: Cabin;
+          font-size: 20px;
+      }
+      input[type=reset] {
+          background-color: #5c5c5c;
+          color: white;
+          outline-color: white;
+          font-family: Cabin;
+          font-size: 20px;
+      }
+      h3{
+        style:bold;
+        font-family: Cabin;
+      }
+      #race {
+          background-color: #5c5c5c;
+          color: white;
+          outline-color: white;
+          font-family: Cabin;
+          font-size: 20px;
+      }
+      #class {
+          background-color: #5c5c5c;
+          color: white;
+          outline-color: white;
+          font-family: Cabin;
+          font-size: 20px;
+      }
+    fieldset {
+          background-color: #262626;
+          color: white;
+          padding: 20px;
+          font-family: Cabin;
+          font-size: 20px;
+          width: 50%;
+          margin: 20px;
+          overflow:auto;
+      }
+    .container {
+        display: grid;
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d";
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-columns: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top{
+      grid-area: b;
+      background-color: black;
+    }
+    .top fieldset{
+      width:100%;
+      height:100%;
+    }
+    .middle{
+        grid-area: c;
+      background-color: black;
+    }
+    .middle fieldset{
+      width:100%;
+      height:100%;
+    }
+    .bottom{
+        grid-area: d;
+      background-color: black;
+    }
+    .bottom fieldset{
+      width:100%;
+      height:100%;
+    }
+    header {
+        grid-area: a;
+        color: white;
+        background-color: black;
+    }
+    @media ( min-width: 768px ) {
+        .container {
+            grid-template-areas:
+                "a"
+                "b"
+                "c"
+                "d";
+            grid-template-rows: 10% 40% 40% 10%;
+            grid-template-columns: 100%;
+            height: 100%;
+    }
+
+    @media ( min-width: 992px ) {
+        .container {
+            grid-template-areas:
+                "a"
+                "b"
+                "c"
+                "d";
+            grid-template-rows: 10% 40% 40% 10%;
+            grid-template-columns: 100%;
+            height:100%;
+        }
+    }
+    </style>
+    <script src="js/home.js"></script>
+  </body>
+</html>

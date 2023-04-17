@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="background_styles.css">
+      <link rel="stylesheet" href="styles.css">
+      <title>Web Adventure Game</title>
+      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    </head>
+    <body>
+      <div class="container">
+        <div class="box title">
+          <header
+            class="box">
+            <h1>Campaign &nbspTutorial<h1>
+          </header>
+        </div>
+        <div class="box main">
+           <div id="text">
+              This is the full tutorial on how to create a campaign with our custom campaign creator. Please be sure to follow all steps to prevent any issues.
+          </div>
+          <div id="steps">
+            <p>Step One: Creating the Campaign:</p>
+                - Begin by locating the Create/Edit Campaign section<br>
+                - Decide on a name for the campaign and enter that under Campaign Name. In this example, I will name it “Tutorial Campaign”.<br>
+                - Then decide on what the file of your very first story section will be and input this under Default Story State. For this example, I will use the name “Start”.<br>
+                - Ensure that both of these fields have been filled out and click submit. You will get a success alert, click “ok”. Congratulations you have created your campaign. Be sure to write down the campaign name and keep track of your file names<br>
+                <br>
+             <p>Step Two: Creating Basic Files</p>
+                - Now that you have made your campaign you can start with the fun stuff. This section may need some planning, or you can just go have fun and see what comes out of it. Start by deleting the text in Default Story State.<br>
+                - Then move into the box below titled StoryState Editor. And type your default story state that you assigned before into the Filename box. Be sure to watch for spelling and capitalization.<br>
+                - Decide what you want to display when the player starts the campaign and type that into the Prompt box. For this example, I will type “You walk up to a house.”<br>
+                - For now, let's leave the Skill Modification blank.<br>
+                - Find the box titled Options.<br>
+                - In this box type what you want your first option to be in the Option Text box. For this example, I will say “Knock”<br>
+                - Again, for now, let’s skip the Skill Check option and move on to Success Link. In this box, you will write the name of the file you want this option to send the player to. For my example, I will name it “1a” as it is option 1 choice ‘a’ you can name this whatever you like. Be sure to write down the name of this file to keep track of all files you have paths to.<br>
+                - As we do not have a skill check we do not need to fill in Fail Link.<br>
+                - If you would like to have another option click the “+” button and follow these same steps to create another possible option. Do this until you have all your options. Make sure all your file names are different. I have created another option that allows the player to “Try to open the door”<br>
+                - When you have all the options you wish to have, click the Submit button next to Filename at the top. If you get the alert “success” congratulations you have a file! Otherwise, check you have filled all the boxes out correctly.<br>
+                <br>
+            <p>Step Three: Damaging Your Players (online)</p>
+                - Now that you have your first file made, click the Clear button. If you ever forget what is in a file, type the file you want to access into Filename and click get, all your inputs for that file will be shown on the screen.<br>
+                - Now type in your new file name into the Filename, for this example, I will go to my file “1a”. Then type in the text or prompt. I will type in “The door falls on you.”<br>
+                - In order to damage the player type “hp” into the first box in the Skill Modification section. In the second box decide how much you would like to damage your player. Every player has 20 hp to start, you can add to their hp and heal them by using a positive number or damage your player by putting a negative number. I will harm my players of 2 hp by entering “-2” If I wanted to add two I would type “2” if I wanted to kill my player I would type “-20”<br>
+                - If you wish to modify any other stats (strength, dexterity, intelligence, wisdom, charisma) all you need to do is follow these steps while changing the “hp” to whatever other stat you wish.<br>
+                - When you have made your file, congratulations! You have learned how to harm, heal, and modify character stats. Use this wisely because you can kill your players. MAKE SURE TO COMPLETE THE NEXT STEP BEFORE ANYTHING ELSE!<br>
+                <br>
+            <p>Step Four: The Death Of Your Players</p>
+                - If you wish to harm your players, ensure that if they die they have a place to go.<br>
+                - In order to do this, find the FileName box and type in “death” <br>
+                - You can type anything into the prompt. I will type “You died.”<br>
+                - Then I will create an option that loops them back to the start by putting “Start” (or whatever filename you would like your player to be sent to) into the Success Link and “Start over” in the options link. <br>
+                <br>
+            <p>Step Five: Skill Checks</p>
+                - When players create a character they are assigned stats through a randomized generator based on Dungeons and Dragons stats. These stats can be used to determine if a player succeeds or fails an action.<br>
+                - Start by putting in your designated Filename and Prompt, then name your option and what you would like your option to be (reference previous steps). <br>
+                - Then move down to the first Skill Check box and input the desired skill you wish to check (strength, dexterity, intelligence, wisdom, charisma, hp) For this example I will use strength.<br>
+                - In the second Skill Check box, I will put a number that the player’s dexterity skill must be over. (The most that a player can have for skills is 22 and the lowest is -2 and all hp starts at 20) For this example I want a player to have either 12 or above to pass.<br>
+                - Then I will put the filename I want the player to go to if they do pass the skill check in the Success Link and I will put the link I want the player to go to if they don’t pass in the Fail Link box.<br>
+                <br>
+            <p>Step Six: Sharing Your Story</p>
+                - When you have been sure that your campaign is fully complete with no dead ends, all files have an option (even ending options should link back to the start), and your death option has been made (see step 4). Tell your friends the name of your campaign and have them input that into the Set Campaign section on the Play Game page.<br>
+                - Then all you have to do is click on the Set Campaign button and you’re set!<br>
+                - If you would like to collaborate with friends in the making process, all you need to do is give them the name of the campaign and put that in Campaign Name and they can follow steps 2 through 5. Although, you must talk and collaborate to prevent overwriting files or option links with no created file.<br>
+                <br>
+            <p>END:</p>
+                Congratulations! You know how to use our custom campaign maker. Have fun creating your own stories to share with your friends.<br><br>
+                ((Please ensure that all of your links have been created to prevent crashing the server. All ending files should link back to your first link. NO LINK SHOULD HAVE NO OPTIONS AND ALL OPTION LINKS MUST BE CREATED AS WELL AS A DEATH LINK!!!))
+          </div>
+          <div id="image">
+            <p>Step One: Creating the Campaign:</p>
+            <img id="img1" src="StepOneImage.PNG" alt="step1">
+            <br>
+            <p>Step Two: Creating Basic Files</p>
+            <img id="img2" src="StepTwoImage.PNG" alt="step2">
+            <br>
+            <p>Step Three: Damaging Your Players (online)</p>
+            <img id="img3" src="StepThreeImage.PNG" alt="step3">
+            <br>
+            <p>Step Four: The Death Of Your Players</p>
+            <img id="img4" src="StepFourImage.PNG" alt="step4">
+            <br>
+            <p>Step Five: Skill Checks</p>
+            <img id="img5" src="StepFiveImage.PNG" alt="step5">
+          </div>
+      </div>
+        <script src="js/console.js"></script>
+
+</div>
+    </body>
+
+    <style>
+     body, html {
+    background-color: black;
+    height: 100%;
+    padding:0;
+    margin: 0;
+    }
+   *{
+      box-sizing: border-box;
+    }
+    .container{
+      border:10px solid black;
+    }
+    .container {
+        display: grid;
+        grid-template-areas:
+            "a"
+            "b";
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 100%;
+        height: auto;
+        background-color: black;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width:100%;
+        height:100%;
+        float:left;
+        float:top;
+    }
+    input[type="textbox"]{
+        width:100%;
+        height:100%;
+        float:left;
+        float:top;
+        background-color: #5c5c5c;
+        color: white;
+        outline-color: white;
+        font-family: Cabin;
+        font-size: 20px;
+    }
+    header {
+        grid-area: a;
+        color: white;
+        background-color: black;
+        font-size: 25px;
+    }
+    .title{
+      border:2px solid white;
+      background-color: black;
+      grid-area:a;
+      height:100%;
+      width:100%;
+    }
+    .main{
+      border:2px solid white;
+      background-image:url("");
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size:cover;
+      grid-area:b;
+      display: grid;
+      grid-template-areas:
+          "hh hh"
+          "zz ll";
+      grid-template-rows: 20% 80%;
+      grid-template-columns: 50% 50%;
+      height:100%;
+      width:100%;
+      overflow:auto;
+    }
+    #text{
+      border:1px solid white;
+      height:100%;
+      width:100%;
+      grid-area:hh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      overflow:auto;
+      background-color: #262626;
+      color: white;
+      outline-color: white;
+      font-family: Cabin;
+      font-size: 24px;
+      font-weight:bold;
+    }
+    #steps{
+      border:1px solid white;
+      height:100%;
+      width:100%;
+      grid-area:zz;
+      padding:5%;
+      overflow:auto;
+      background-color: #5c5c5c;
+      color: white;
+      outline-color: white;
+      font-family: Cabin;
+      font-size: 22px;
+    }
+    #steps p{
+        font-weight:bold;
+        font-size: 22px;
+        margin-top:auto;
+        text-decoration: underline;
+    }
+    #image{
+      border:1px solid white;
+      height:100%;
+      grid-area:ll;
+      overflow:auto;
+      padding-top:5%;
+       padding-bottom:5%;
+      background-color: #5c5c5c;
+      color: white;
+      outline-color: white;
+      font-family: Cabin;
+      font-size: 22px;
+    }
+    #image p{
+        font-weight:bold;
+        font-size: 22px;
+        margin-top:auto;
+        text-decoration: underline;
+    }
+    @media ( min-width: 768px ) {
+        .container {
+        grid-template-areas:
+            "a"
+            "b";
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 100%;
+        height: 100%;
+    }
+
+    @media ( min-width: 992px ) {
+        .container {
+        grid-template-areas:
+            "a"
+            "b";
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 100%;
+        height: 100%;
+        }
+    }
+    </style>
+</html>

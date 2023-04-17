@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="background_styles.css">
+      <link rel="stylesheet" href="styles.css">
+      <title>Web Adventure Game</title>
+      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    </head>
+    <body>
+      <div class="container">
+        <div class="box title">
+          <header
+            class="box">
+            <h1>Text &nbspAdventure &nbspGame<h1>
+          </header>
+        </div>
+        <div class="box main">
+           <div id="play">
+              <div><a href = "/game.html" >Play Game</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href = "/characterCreator.html" >Create Character</a></div>
+          </div>
+          <div id="campaign">
+            <div><a href = "/editor" >Edit Campaign</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href = "/tutorial" >Campaign Tutorial</a></div>
+          </div>
+      </div>
+        <script src="js/console.js"></script>
+
+</div>
+    </body>
+
+    <style>
+     body, html {
+    background-color: #262626;
+    height: 100%;
+    padding:0;
+    margin: 0;
+    }
+   *{
+      box-sizing: border-box;
+    }
+    a {
+        margin-left:auto;
+        margin-right:auto;
+        color: white;
+        text-decoration: none;
+        background-color: #5c5c5c;
+        font-size: 45px;    
+        padding: 5px;
+
+      }    
+      a:hover {
+        color: #5c5c5c;
+        background-color: black;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #5c5c5c;
+        font-size: 45px;
+           
+      }
+    .container{
+      border:100px solid black;
+    }
+    .container {
+        display: grid;
+        grid-template-areas:
+            "a"
+            "b";
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 100%;
+        height: auto;
+        background-color: black;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input[type="text"]{
+        width:100%;
+        height:100%;
+        float:left;
+        float:top;
+    }
+    header {
+        grid-area: a;
+        color: white;
+        background-color: #262626;
+        font-size: 22px;
+    }
+    .title{
+      border:2px solid white;
+      background-color: #262626;
+      grid-area:a;
+      height:100%;
+      width:100%;
+    }
+    .main{
+      border:2px solid white;
+      background-image:url("dice.jpg");
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size:cover;
+      grid-area:b;
+      display: grid;
+      grid-template-areas:
+          "hh"
+          "zz";
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 100%;
+      height:100%;
+      width:100%;
+    }    #play{
+      height:100%;
+      grid-area:hh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    #campaign{
+      height:100%;
+      grid-area:zz;
+      display:flex;
+      justify-content:center;
+
+    }
+    @media ( min-width: 768px ) {
+        .container {
+        grid-template-areas:
+            "a"
+            "b";
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 100%;
+        height: 100%;
+    }
+
+    @media ( min-width: 992px ) {
+        .container {
+        grid-template-areas:
+            "a"
+            "b";
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 100%;
+        height: 100%;
+        }
+    }
+    </style>
+</html>
